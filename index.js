@@ -20,9 +20,12 @@ conta2.agencia =2
 conta2.cliente = cliente2;
 conta2.depositar(100)
 
-conta1.transferir(100, conta2)
+conta2.saldo = 2000;
 
-console.log(conta1, conta2)
+
+console.log(conta1,conta2)
+
+
 
 
 
