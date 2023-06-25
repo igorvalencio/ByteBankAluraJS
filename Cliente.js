@@ -1,25 +1,14 @@
 export class Cliente {
-<<<<<<< HEAD
-nome;
-_cpf;
-
-get cpf(){
-    return this._cpf;
-}
-    constructor(nome, cpf){
-    this._cpf = cpf;
-    this.nome = nome;
-=======
+    static NumeroDeClientes = 0;
     nome;
     _cpf;
-    get cpf(){
-    return this._cpf;
+    get cpf() {
+        return this._cpf;
     }
-
-    constructor(nome, cpf){
-        this.nome = nome;
+    constructor(nome, cpf) {
         this._cpf = cpf;
-
->>>>>>> eded784f097df86a2aaab1d61b17a9b4a7016c94
+        this.nome = nome;
+        Cliente.NumeroDeClientes++;
     }
+
 }
