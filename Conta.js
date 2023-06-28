@@ -5,7 +5,6 @@ export class Conta {
         this._agencia = agencia;
     }
    
-   
    set cliente(novoValor){
        if(novoValor instanceof Cliente){
         this._cliente = novoValor;
@@ -20,11 +19,11 @@ export class Conta {
    }
  
    sacar(valor) {
-
-    taxa = 1.1* valor;
-       if (valor <= this._saldo) {
-           this._saldo -= valor;
-           return valor;
+    let taxa = 1;
+    const ValorSacado = taxa * valor;
+       if (ValorSacado <= this._saldo) {
+           this._saldo -= ValorSacado;
+           return ValorSacado;
        }
    }
    depositar(valor) {

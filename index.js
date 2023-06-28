@@ -6,17 +6,16 @@ import { ContaPoupanca } from "./ContaPoupanca.js";
 // conta2.cliente = cliente2;
 
 const cliente1 = new Cliente("Igor", 32321654);
-const conta1 = new ContaCorrente(1, cliente1);
-const poupanca1 = new ContaPoupanca(100, cliente1, 1);
+const corrente1 = new ContaCorrente(1000, cliente1, 1);
+const poupanca1 = new ContaPoupanca(1000, cliente1, 1);
 
-conta1.depositar(100)
-conta1.sacar(50)
-
-
+corrente1.sacar(50)
+poupanca1.sacar(50)
 
 
+
+console.log(corrente1)
 console.log(poupanca1)
-console.log(conta1)
 
 
 
